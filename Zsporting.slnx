@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Zsporting.Api/Zsporting.Api.csproj" />
+  <Project Path="Zsporting.Application/Zsporting.Application.csproj" />
+  <Project Path="Zsporting.Domain/Zsporting.Domain.csproj" />
+  <Project Path="Zsporting.Infrastructure/Zsporting.Infrastructure.csproj" />
+  <Project Path="Zsporting.Tests/Zsporting.Tests.csproj" />
+</Solution>
