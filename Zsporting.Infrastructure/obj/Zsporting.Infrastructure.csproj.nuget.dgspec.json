@@ -170,6 +170,9 @@
             "projectReferences": {
               "/workspaces/Zsporting-API/Zsporting.Application/Zsporting.Application.csproj": {
                 "projectPath": "/workspaces/Zsporting-API/Zsporting.Application/Zsporting.Application.csproj"
+              },
+              "/workspaces/Zsporting-API/Zsporting.Domain/Zsporting.Domain.csproj": {
+                "projectPath": "/workspaces/Zsporting-API/Zsporting.Domain/Zsporting.Domain.csproj"
               }
             }
           }

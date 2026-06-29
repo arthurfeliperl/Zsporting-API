@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
+    "net8.0": {
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -656,12 +656,12 @@
           "Microsoft.OpenApi": "1.6.22"
         },
         "compile": {
-          "lib/net9.0/Swashbuckle.AspNetCore.Swagger.dll": {
+          "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net9.0/Swashbuckle.AspNetCore.Swagger.dll": {
+          "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
             "related": ".pdb"
           }
         },
@@ -675,12 +675,12 @@
           "Swashbuckle.AspNetCore.Swagger": "7.0.0"
         },
         "compile": {
-          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
             "related": ".pdb"
           }
         }
@@ -688,12 +688,12 @@
       "Swashbuckle.AspNetCore.SwaggerUI/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
             "related": ".pdb"
           }
         },
@@ -957,7 +957,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
-          "Zsporting.Application": "1.0.0"
+          "Zsporting.Application": "1.0.0",
+          "Zsporting.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Zsporting.Infrastructure.dll": {}
@@ -2691,11 +2692,10 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net9.0": [
+    "net8.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Swashbuckle.AspNetCore >= 7.0.0",
-      "Zsporting.Application >= 1.0.0",
       "Zsporting.Infrastructure >= 1.0.0"
     ]
   },
@@ -2715,18 +2715,15 @@
         "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
-            "/workspaces/Zsporting-API/Zsporting.Application/Zsporting.Application.csproj": {
-              "projectPath": "/workspaces/Zsporting-API/Zsporting.Application/Zsporting.Application.csproj"
-            },
             "/workspaces/Zsporting-API/Zsporting.Infrastructure/Zsporting.Infrastructure.csproj": {
               "projectPath": "/workspaces/Zsporting-API/Zsporting.Infrastructure/Zsporting.Infrastructure.csproj"
             }
@@ -2746,8 +2743,8 @@
       "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -2778,15 +2775,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.14, 9.0.14]"
+            "version": "[8.0.25, 8.0.25]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[9.0.14, 9.0.14]"
+            "version": "[8.0.25, 8.0.25]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.14, 9.0.14]"
+            "version": "[8.0.25, 8.0.25]"
           }
         ],
         "frameworkReferences": {

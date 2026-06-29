@@ -2034,7 +2034,8 @@
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.0",
-      "Zsporting.Application >= 1.0.0"
+      "Zsporting.Application >= 1.0.0",
+      "Zsporting.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2064,6 +2065,9 @@
           "projectReferences": {
             "/workspaces/Zsporting-API/Zsporting.Application/Zsporting.Application.csproj": {
               "projectPath": "/workspaces/Zsporting-API/Zsporting.Application/Zsporting.Application.csproj"
+            },
+            "/workspaces/Zsporting-API/Zsporting.Domain/Zsporting.Domain.csproj": {
+              "projectPath": "/workspaces/Zsporting-API/Zsporting.Domain/Zsporting.Domain.csproj"
             }
           }
         }

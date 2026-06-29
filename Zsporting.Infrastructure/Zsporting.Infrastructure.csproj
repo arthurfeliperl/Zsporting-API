@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\Zsporting.Domain\Zsporting.Domain.csproj" />
     <ProjectReference Include="..\Zsporting.Application\Zsporting.Application.csproj" />
   </ItemGroup>
 
