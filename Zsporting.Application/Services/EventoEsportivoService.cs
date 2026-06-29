@@ -1,5 +1,5 @@
-      using Zsporting.Application.Interfaces;
 using Zsporting.Domain;
+using Zsporting.Application.Interfaces;
 
 namespace Zsporting.Application.Services;
 
@@ -12,30 +12,19 @@ public class EventoEsportivoService : IEventoEsportivoService
         _repository = repository;
     }
 
-    public async Task<IEnumerable<EventoEsportivo>> ObterTodosAsync()
+    public async Task<IEnumerable<EventoEsportivo>> ObterTodosAsync() => await _repository.ObterTodosAsync();
+
+    public async Task<EventoEsportivo?> ObterPorIdAsync(int id) => await _repository.ObterPorIdAsync(id);
+
+    public async Task<EventoEsportivo> AdicionarAsync(EventoEsportivo evento)
     {
-        return await _repository.ObterTodosAsync();
+        if (evento.DataHora < DateTime.UtcNow)
+            throw new ArgumentException("A data do evento deve ser no futuro.");
+
+        return await _repository.AdicionarAsync(evento);
     }
 
-    public async Task<EventoEsportivo?> ObterPorIdAsync(int id)
-    {
-        return await _repository.ObterPorIdAsync(id);
-    }
+    public async Task AtualizarAsync(EventoEsportivo evento) => await _repository.AtualizarAsync(evento);
 
-    public async Task<EventoEsportivo> CriarAsync(EventoEsportivo evento)
-    {
-
-        
-        return await _repository.CriarAsync(evento);
-    }
-
-    public async Task AtualizarAsync(EventoEsportivo evento)
-    {
-        await _repository.AtualizarAsync(evento);
-    }
-
-    public async Task DeletarAsync(int id)
-    {
-        await _repository.DeletarAsync(id);
-    }
+    public async Task RemoverAsync(int id) => await _repository.RemoverAsync(id);
 }

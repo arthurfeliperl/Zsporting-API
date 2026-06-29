@@ -6,7 +6,7 @@ public interface IEventoEsportivoRepository
 {
     Task<IEnumerable<EventoEsportivo>> ObterTodosAsync();
     Task<EventoEsportivo?> ObterPorIdAsync(int id);
-    Task<EventoEsportivo> CriarAsync(EventoEsportivo evento);
+    Task<EventoEsportivo> AdicionarAsync(EventoEsportivo evento);
     Task AtualizarAsync(EventoEsportivo evento);
-    Task DeletarAsync(int id);
+    Task RemoverAsync(int id);
 }

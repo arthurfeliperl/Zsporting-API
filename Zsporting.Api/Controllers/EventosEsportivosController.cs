@@ -36,7 +36,8 @@ public class EventosEsportivosController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<EventoEsportivo>> Criar([FromBody] EventoEsportivo evento)
     {
-        var novoEvento = await _eventoService.CriarAsync(evento);
+        // Corrigido: usando AdicionarAsync
+        var novoEvento = await _eventoService.AdicionarAsync(evento);
         return CreatedAtAction(nameof(ObterPorId), new { id = novoEvento.Id }, novoEvento);
     }
 
@@ -55,7 +56,8 @@ public class EventosEsportivosController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> Deletar(int id)
     {
-        await _eventoService.DeletarAsync(id);
+        // Corrigido: usando RemoverAsync
+        await _eventoService.RemoverAsync(id);
         return NoContent();
     }
 }
